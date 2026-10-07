@@ -1,15 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import BanglaDate from './BanglaDate';
 
 export default function Hero() {
   // Dynamic Bangla date generator
-  const today = new Date();
-  const banglaDateStr = today.toLocaleDateString('bn-BD', {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
+ 
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-6">
@@ -18,7 +13,7 @@ export default function Hero() {
         <div className="flex-1 space-y-4 text-left">
           {/* Eyebrow / Small Text */}
           <div className="inline-block bg-[#e2eee3] text-[#2c7a36] text-xs md:text-sm font-medium px-3 py-1 rounded-full">
-            {banglaDateStr}
+            <BanglaDate/>
           </div>
 
           {/* Main Heading */}
