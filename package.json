@@ -1,5 +1,5 @@
 {
-  "name": "bazar-dor",
+  "name": "bazar-dor-v2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
+    "react-icons": "^5.7.0",
     "react-marquee-text": "^1.0.6"
   },
   "devDependencies": {

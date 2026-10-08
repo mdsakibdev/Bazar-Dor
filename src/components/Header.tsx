@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import UserInpo from "./UserInpo";
-import NavLinks from "./NavLinks";
 import BanglaDate from "./BanglaDate";
-import Marquee from "./Marquee";
+import UserInpo from "./UserInpo";
+import Navlinks from "./NavLinks";
+import Marquee from "./Merquee";
+
 
 
 export default function Header() {
@@ -48,10 +49,11 @@ export default function Header() {
 
       {/* Category Navigation */}
       <div className="w-full">
-        <NavLinks />
+        <Navlinks/>
       </div>
 
       <Marquee/>
+
     </header>
   );
 }

@@ -1,68 +1,50 @@
 import Link from "next/link";
 
-type Category = {
+interface Category {
   id: string;
-  slug: string;
   nameBn: string;
-  icon: string;
-};
+  icon?: string;
+}
 
-const NavLinks = async () => {
+const Navlinks = async ({
+  currentCategory,
+}: {
+  currentCategory?: string;
+}) => {
   const res = await fetch(
-    "https://api.api-store.workers.dev/api/bazardor/categories",
+    "https://api.abcz.workers.dev/api/bazardor/categories",
     {
-      next: {
-        revalidate: 60,
-      },
+      cache: "no-store",
     }
   );
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch categories");
-  }
-
-  const data: Category[] = await res.json();
+  const categories: Category[] = await res.json();
 
   return (
-    <nav className="w-full border-y border-gray-200 bg-white">
-      <div className="mx-auto w-full max-w-7xl">
-        <div className="overflow-x-auto px-2 sm:px-4 lg:px-6">
-          <div className="flex min-w-max items-center justify-start gap-1 py-2 sm:gap-2">
-            {data.map((category) => (
-              <Link
-                key={category.id}
-                href={`/category/${category.slug}`}
-                className="
-                  flex shrink-0 items-center
-                  rounded-lg
-                  px-3 py-2
-                  text-sm font-bold
-                  text-gray-700
-                  transition-all
-                  hover:bg-green-50
-                  hover:text-green-700
-                  focus-visible:outline-none
-                  focus-visible:ring-2
-                  focus-visible:ring-green-500
-                  sm:px-4
-                  sm:py-2.5
-                  sm:text-base
-                "
-              >
-                <span className="mr-1.5 shrink-0 text-base sm:text-lg">
-                  {category.icon}
-                </span>
+    <nav className="border-t border-b border-gray-100 bg-white  py-2.5">
+      <div className="max-w-7xl mx-auto px-4 flex items-center gap-6 overflow-x-auto text-sm text-gray-700 font-medium">
+        {categories.map((category) => {
+          const isActive = currentCategory === category.id;
 
-                <span className="whitespace-nowrap">
-                  {category.nameBn}
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
+          return (
+            <Link
+              key={category.id}
+              href={`/category/${category.id}`}
+              className={`flex items-center gap-1.5 whitespace-nowrap transition-colors ${
+                isActive
+                  ? "text-green-600 font-semibold border-b-2 border-green-600 pb-0.5"
+                  : "hover:text-green-600"
+              }`}
+            >
+              {category.icon && <span>{category.icon}</span>}
+
+              <span>{category.nameBn}</span>
+            </Link>
+          );
+        })}
       </div>
     </nav>
   );
 };
 
-export default NavLinks;
+export default Navlinks;

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BanglaDate from './BanglaDate';
 
+
 export default function Hero() {
   // Dynamic Bangla date generator
  
