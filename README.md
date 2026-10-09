@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 বাজার দর (BazarDor) - Commodity Price Tracker
 
-## Getting Started
+**বাজার দর (BazarDor)** হলো একটি আধুনিক, রেসপন্সিভ এবং ডাটা-ড্রিভেন ওয়েব অ্যাপ্লিকেশন। এর মাধ্যমে ব্যবহারকারীরা বাংলাদেশের নিত্যপ্রয়োজনীয় বিভিন্ন পণ্যের দৈনন্দিন বাজার দর, পণ্যের দাম বৃদ্ধি ও হ্রাসের তথ্য, এবং বিভাগভিত্তিক বিভিন্ন বাজারের সর্বনিম্ন ও সর্বাধিক মূল্যের সারসংক্ষেপ সহজে জানতে পারবেন।
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 টেকনোলজি স্ট্যাক (Technologies Used)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend Framework:** Next.js (App Router)
+- **Styling & UI:** Tailwind CSS, daisyUI
+- **Type Safety:** TypeScript
+- **Authentication:** Better Auth (Email/Password, Google, GitHub)
+- **Icons & Notifications:** React Icons, React-Toastify
+- **State & Data Fetching:** React Client & Server Components, Cloudflare Workers API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ প্রধান ৫টি ফিচার (Key Features)
 
-## Learn More
+1. **📊 রিয়েল-টাইম প্রাইস ট্র্যাকিং (Price Trends & Highlights):** 
+   - দৈনন্দিন বাজার দর অনুযায়ী কোন পণ্যগুলোর দাম বেড়েছে (**আজ দাম বেড়েছে ▲**) এবং কোন পণ্যগুলোর দাম কমেছে (**আজ দাম কমেছে ▼**) তার রিয়েল-টাইম ও শতাংশভিত্তিক হিসাব দেখা যায়।
 
-To learn more about Next.js, take a look at the following resources:
+2. **🏷️ ডাইনামিক ক্যাটাগরি ও ফিল্টারিং (Dynamic Category & Sorting):**
+   - চাল, ডাল, তেল, সবজি, মাছ, মাংস ইত্যাদির মতো নির্দিষ্ট ক্যাটাগরি অনুযায়ী পণ্য ব্রাউজ করা যায়। সাথে থাকছে দামের ভিত্তি (কম থেকে বেশি বা বেশি থেকে কম) অনুযায়ী পণ্য সাজানোর (Sorting) সুবিধা।
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **🏬 বাজারভিত্তিক বিস্তারিত তথ্য (Market Breakdown & Analytics):**
+   - প্রতিটি পণ্যের ডিটেইলস পেজে ঢাকা, চট্টগ্রাম, রাজশাহীসহ অন্যান্য বিভাগের প্রধান প্রধান বাজারগুলোর সর্বনিম্ন, সর্বাধিক এবং গড় মূল্যের বিস্তারিত বিবরণ।
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **🔐 আধুনিক ইউজার অথেন্টিকেশন (Better Auth Integration):**
+   - Email/Password দিয়ে রেজিস্ট্রেশন ও লগইনের পাশাপাশি Google এবং GitHub সোশ্যাল লগইনের মাধ্যমে দ্রুত সাইন ইন করার সুবিধা।
 
-## Deploy on Vercel
+5. **📱 রেসপন্সিভ ও বাংলা ফ্রেন্ডলি ইউআই (Bangla UI & Responsive Design):**
+   - সকল ডিভাইসের (মোবাইল, ট্যাবলেট, ডেস্কটপ) জন্য শতভাগ রেসপন্সিভ ইন্টারফেস এবং বাংলা টাইপোগ্রাফি নিশ্চিত করতে কাস্টম বাংলা ফন্ট সাপোর্ট।
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
