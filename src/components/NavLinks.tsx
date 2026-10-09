@@ -12,11 +12,13 @@ const Navlinks = async ({
   currentCategory?: string;
 }) => {
   const res = await fetch(
-    "https://api.abcz.workers.dev/api/bazardor/categories",
-    {
-      cache: "no-store",
-    }
-  );
+  "https://api.abcz.workers.dev/api/bazardor/categories",
+  {
+    next: {
+      revalidate: 60,
+    },
+  }
+);
 
   const categories: Category[] = await res.json();
 

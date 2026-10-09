@@ -80,7 +80,7 @@ export default function CategoryProducts({
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
 
       {/* Category Banner Card */}
-      <div className="bg-[#f4f7f4] rounded-2xl p-6 border border-gray-100 flex items-center gap-4">
+      <div className="bg-white rounded-2xl p-6 border border-gray-100 flex items-center gap-4">
         <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm shrink-0">
           {categoryIcon}
         </div>
@@ -98,7 +98,7 @@ export default function CategoryProducts({
       </div>
 
       {/* Sorting Control Bar */}
-      <div className="bg-[#f4f7f4] rounded-2xl p-4 border border-gray-100 flex items-center justify-end">
+      <div className="bg-white rounded-2xl p-4 border border-gray-100 flex items-center justify-end">
         <div className="flex items-center gap-3">
 
           <label
