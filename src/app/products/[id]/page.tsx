@@ -1,6 +1,7 @@
 import ProductDetailView, {
   ProductDetail,
 } from "@/components/ProductDetailView";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{
@@ -30,6 +31,10 @@ export default async function ProductDetailsPage({
     }
   } catch (error) {
     console.error("Failed to fetch product details:", error);
+  }
+
+  if(!product){
+    notFound()
   }
 
   if (!product) {

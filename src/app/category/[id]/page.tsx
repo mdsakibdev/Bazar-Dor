@@ -1,4 +1,5 @@
 import CategoryProducts from "@/components/CategoryProducts";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{
@@ -23,6 +24,8 @@ export default async function CategoryPage({ params }: PageProps) {
   }
 
   const products = await res.json();
+
+  
 
   if (!products || products.length === 0) {
     return (
