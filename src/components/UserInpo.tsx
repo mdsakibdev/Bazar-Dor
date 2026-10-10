@@ -63,7 +63,7 @@ const UserInpo = () => {
           </div>
 
           {/* Sign Out Button */}
-          <Link href={"/signIn"}>
+          <Link href={"/signin"}>
           <button
             onClick={handleSignOut}
             className="btn btn-sm md:btn-md rounded-lg bg-green-600 px-4 text-white border-none hover:bg-green-700 transition-colors"
