@@ -21,7 +21,7 @@ export default function Loading() {
   }, []);
 
   return (
-    <main className="fixed inset-0 z-50 flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-green-100 px-5">
+    <main className="fixed inset-0 z-50 flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-br from-emerald-50 via-white to-green-100 px-5">
       {/* Background decoration */}
       <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-emerald-200/30 blur-3xl" />
       <div className="absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-green-300/30 blur-3xl" />
@@ -66,7 +66,7 @@ export default function Loading() {
           aria-valuenow={progress}
         >
           <div
-            className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-green-600 transition-[width] duration-300 ease-out"
+            className="h-full rounded-full bg-linear-to-r from-emerald-500 to-green-600 transition-[width] duration-300 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>

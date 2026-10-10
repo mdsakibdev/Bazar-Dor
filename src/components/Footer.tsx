@@ -30,13 +30,14 @@ export default function Footer() {
             <Link href="#sob-ponno" className="hover:text-[#008a3e] transition-colors">
               সব পণ্য
             </Link>
-            <Link href="/about" className="hover:text-[#008a3e] transition-colors">
+            <Link href="/" className="hover:text-[#008a3e] transition-colors">
               আমাদের সম্পর্কে
             </Link>
-            <Link href="/privacy" className="hover:text-[#008a3e] transition-colors">
+            <Link href="/" className="hover:text-[#008a3e] transition-colors">
               গোপনীয়তা নীতি
             </Link>
           </div>
+          
         </div>
       </div>
     </footer>
