@@ -4,32 +4,164 @@
 
 ---
 
-## 🚀 টেকনোলজি স্ট্যাক (Technologies Used)
+🖥️ Project Preview
 
-- **Frontend Framework:** Next.js (App Router)
-- **Styling & UI:** Tailwind CSS, daisyUI
-- **Type Safety:** TypeScript
-- **Authentication:** Better Auth (Email/Password, Google, GitHub)
-- **Icons & Notifications:** React Icons, React-Toastify
-- **State & Data Fetching:** React Client & Server Components, Cloudflare Workers API
+<p align="center">
+  <a href="https://bazar-dor-sable.vercel.app/">
+    <img
+      src="https://i.ibb.co/8DKRgzDB/Screenshot-54.jpg"
+      alt="Bazar Dor Homepage Banner Preview"
+      width="100%"
+    />
+  </a>
+</p>
 
----
+<p align="center">
+  <em>A clean, Bengali-first interface for exploring everyday market prices.</em>
+</p>
 
-## ✨ প্রধান ৫টি ফিচার (Key Features)
-
-1. **📊 রিয়েল-টাইম প্রাইস ট্র্যাকিং (Price Trends & Highlights):** 
-   - দৈনন্দিন বাজার দর অনুযায়ী কোন পণ্যগুলোর দাম বেড়েছে (**আজ দাম বেড়েছে ▲**) এবং কোন পণ্যগুলোর দাম কমেছে (**আজ দাম কমেছে ▼**) তার রিয়েল-টাইম ও শতাংশভিত্তিক হিসাব দেখা যায়।
-
-2. **🏷️ ডাইনামিক ক্যাটাগরি ও ফিল্টারিং (Dynamic Category & Sorting):**
-   - চাল, ডাল, তেল, সবজি, মাছ, মাংস ইত্যাদির মতো নির্দিষ্ট ক্যাটাগরি অনুযায়ী পণ্য ব্রাউজ করা যায়। সাথে থাকছে দামের ভিত্তি (কম থেকে বেশি বা বেশি থেকে কম) অনুযায়ী পণ্য সাজানোর (Sorting) সুবিধা।
-
-3. **🏬 বাজারভিত্তিক বিস্তারিত তথ্য (Market Breakdown & Analytics):**
-   - প্রতিটি পণ্যের ডিটেইলস পেজে ঢাকা, চট্টগ্রাম, রাজশাহীসহ অন্যান্য বিভাগের প্রধান প্রধান বাজারগুলোর সর্বনিম্ন, সর্বাধিক এবং গড় মূল্যের বিস্তারিত বিবরণ।
-
-4. **🔐 আধুনিক ইউজার অথেন্টিকেশন (Better Auth Integration):**
-   - Email/Password দিয়ে রেজিস্ট্রেশন ও লগইনের পাশাপাশি Google এবং GitHub সোশ্যাল লগইনের মাধ্যমে দ্রুত সাইন ইন করার সুবিধা।
-
-5. **📱 রেসপন্সিভ ও বাংলা ফ্রেন্ডলি ইউআই (Bangla UI & Responsive Design):**
-   - সকল ডিভাইসের (মোবাইল, ট্যাবলেট, ডেস্কটপ) জন্য শতভাগ রেসপন্সিভ ইন্টারফেস এবং বাংলা টাইপোগ্রাফি নিশ্চিত করতে কাস্টম বাংলা ফন্ট সাপোর্ট।
+<p align="center">
+  <a href="https://bazar-dor-sable.vercel.app/">
+    <strong>🌐 Explore the Live Website →</strong>
+  </a>
+</p>
 
 ---
+🛠️ Technology Stack
+
+Technology
+
+Purpose
+
+Next.js
+
+React framework and application routing
+
+React
+
+Building interactive user interfaces
+
+TypeScript
+
+Type safety and maintainable code
+
+Tailwind CSS
+
+Responsive styling
+
+daisyUI
+
+UI components and styling utilities
+
+Better Auth
+
+User authentication
+
+React Icons
+
+Icons throughout the interface
+
+React-Toastify
+
+Toast notifications
+
+Cloudflare Workers API
+
+Product and market data integration
+
+Vercel
+
+Deployment and hosting
+
+🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+1. Clone the Repository
+
+git clone https://github.com/mdsakibdev/Bazar-Dor.git
+
+2. Navigate to the Project Folder
+
+cd Bazar-Dor
+
+3. Install Dependencies
+
+npm install
+
+4. Configure Environment Variables
+
+Create a .env.local file in the project root and add the environment variables required by your application.
+
+MONGODB_URI=your_mongodb_connection_string
+BETTER_AUTH_SECRET=your_auth_secret
+BETTER_AUTH_URL=http://localhost:3000
+
+Add any API URL or OAuth credentials required by your current project configuration. Use the actual variable names expected by your application.
+
+Important: Never commit real API keys, database credentials, or authentication secrets to GitHub.
+
+5. Start the Development Server
+
+npm run dev
+
+Open http://localhost:3000 in your browser.
+
+📂 Project Structure
+
+Bazar-Dor/
+├── public/
+├── src/
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
+
+Note: This is a simplified overview of the main project structure.
+
+🌐 Live Demo
+
+Explore the deployed application:
+
+Live Website: https://bazar-dor-sable.vercel.app/
+
+GitHub Repository: https://github.com/mdsakibdev/Bazar-Dor
+
+🔒 Security
+
+Keep sensitive environment variables private.
+
+Store production credentials in the deployment platform's environment settings.
+
+Never expose database credentials or authentication secrets in client-side code.
+
+Use environment variables for API configuration where appropriate.
+
+🎯 Project Goals
+
+Make everyday market-price information easier to access.
+
+Provide a Bengali-first user experience.
+
+Help users understand price changes.
+
+Build a responsive and accessible web application.
+
+Practice modern full-stack development using Next.js and related technologies.
+
+👨‍💻 Author
+
+Abdur Razzak Sakib
+Full-Stack Web Developer
+
+<p>
+  <a href="https://github.com/mdsakibdev">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/abdurrazzak1">LinkedIn</a>
+</p>
+
+<p align="center">
+  Made with ❤️ in Bangladesh 🇧🇩
+</p>
